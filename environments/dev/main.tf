@@ -15,11 +15,11 @@ terraform {
 
 
 module "instances" {
-  source = "./modules/instances"
+  source = "../../modules/instances"
 }
 
 module "storage" {
-  source = "./modules/storage"
+  source = "../../modules/storage"
 }
 
 module "vpc" {
