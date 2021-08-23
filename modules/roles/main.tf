@@ -3,4 +3,5 @@ resource "google_project_iam_custom_role" "my-custom-role" {
   title       = "My Custom Role"
   description = "A description"
   permissions = ["iam.roles.list", "iam.roles.create", "iam.roles.delete"]
+  project     = var.project_id
 }
