@@ -22,6 +22,10 @@ module "storage" {
   source = "../../modules/storage"
 }
 
+module "roles" {
+  source = "../../modules/roles"
+}
+
 module "vpc" {
     source  = "terraform-google-modules/network/google"
     version = "3.2.2"
