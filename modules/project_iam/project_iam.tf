@@ -4,8 +4,12 @@ resource "google_project_iam_member" "project" {
   member  = "user:terry@onixnet.com"
 }
 
-resource "google_project_iam_member" "project" {
+resource "google_project_iam_binding" "project_editors" {
   project = var.project_id
-  role    = "roles/compute.xpnAdmin"
-  member  = "user:terry@onixnet.com"
+  role    = "roles/editor"
+
+  members = [
+    "user:terry@onixnet.com",
+    "user:terry@searchdemo.onixnet.com"
+  ]
 }
