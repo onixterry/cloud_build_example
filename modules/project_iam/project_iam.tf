@@ -19,7 +19,6 @@ resource "google_project_iam_binding" "project_editors" {
 
   members = [
     "user:terry@onixnet.com",
-    "user:terry@searchdemo.onixnet.com",
     "serviceAccount:321230582999@cloudbuild.gserviceaccount.com"
   ]
 }
