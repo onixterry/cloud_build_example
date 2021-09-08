@@ -11,3 +11,10 @@ variable "editor_list" {
     "terry.chambers@gmail.com",
       ]
 }
+
+variable "editor_svcAcct_list" {
+  type        = list(string)
+  description = "The list of Service Account Editors "
+  default = ["321230582999@cloudbuild.gserviceaccount.com"
+      ]
+}
