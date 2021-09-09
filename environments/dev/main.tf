@@ -27,11 +27,6 @@ module "project-services"{
   ]
 }
 
-
-module "project_iam"{
-  source = "../../modules/project_iam"
-}
-
 module "test" {
   source = "../../modules/test"
 }
