@@ -9,6 +9,7 @@ variable "editor_list" {
   description = "The list of Editors "
   default = ["terry@onixdev2.com",
     "terry.chambers@gmail.com",
+    "terry@onixnet.com"
       ]
 }
 
