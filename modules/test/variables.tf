@@ -7,8 +7,7 @@ variable "project_id" {
 variable "editor_list" {
   type        = list(string)
   description = "The list of Editors "
-  default = ["terry@onixdev2.com",
-    "terry@onixnet.com"
+  default = ["terry@onixdev2.com"
       ]
 }
 
